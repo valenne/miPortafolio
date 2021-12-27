@@ -1,3 +1,8 @@
+:root {
+  --primary-color: #f25f5c;
+  --icon-color: #f25f5c;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -13,7 +18,7 @@ body {
 
 /* navBar */
 .navbar {
-  background-color: #660066;
+  background-color: var(--primary-color);
   position: fixed;
   width: 100vw;
   z-index: 999;
@@ -27,7 +32,7 @@ body {
 
 /* HERO SECTION */
 #hero-section {
-  background-image: url(../img/bg_hero.png);
+  background-image: url(../img/bg-hero2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -75,7 +80,7 @@ body {
 }
 
 #Experiencia i {
-  color: #660066;
+  color: var(--icon-color);
 }
 
 #Experiencia div:last-child article h4 {
@@ -89,7 +94,7 @@ body {
 
 /* mis ultimos trabajos */
 #trabajos {
-  background-color: #660066;
+  background-color: var(--primary-color);
   font-family: "Oswald";
 }
 
@@ -105,7 +110,7 @@ body {
 }
 /* FOOTER */
 #footer {
-  background-color: #660066;
+  background-color: var(--primary-color);
 }
 #footer h1 {
   font-family: "Oswald";
@@ -115,6 +120,11 @@ body {
   text-decoration: none;
 }
 
-.sticky {
-  position: fixed;
+.btn {
+  transition: all 0.5s;
+  background-color: #495057;
+}
+.btn:hover,
+.btn:active {
+  background-color: var(--primary-color);
 }
